@@ -4,7 +4,7 @@ repository: nestjs/config
 npm: '@nestjs/config'
 website: ''
 categories:
-  - analytics
+  - config
 maintainers:
   - name: Kamil Myśliwiec
     github: kamilmysliwiec

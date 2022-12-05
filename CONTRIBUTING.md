@@ -24,7 +24,10 @@ If you want to add a new category, you can do so by adding an item in the `modul
 
 #### Manually
 
-You can manually add your file in `modules/[type]` directory, naming it `[module].yml` (e.g. `modules/official/axios.yml`).: 
+You can manually add your file in `modules/[type]` directory, naming it `[module].yml` (e.g. `modules/official/axios.yml`).
+
+> If you modify your .yml manually, make sure to use the `id` for the categories.
+> You can find the slug of each category by running `npm run categories`.
 
 ### Generator
 

@@ -24,9 +24,13 @@ modules.forEach((module) => {
 
 if (Object.values(validatedModules).some((error) => error !== null)) {
     console.error(chalk.red('Validation failed'));
-    Object.entries(validatedModules).forEach(([moduleName, error]) => {
-        if (error !== null) {
-            console.error(chalk.red(`Module ${moduleName} failed validation with error(s): `), error);
+    Object.entries(validatedModules).forEach(([moduleName, errors]) => {
+        if (errors !== null && errors.length > 0) {
+            console.error(chalk.red(`Module ${moduleName} failed validation with error(s): `));
+            errors.forEach((error) => {
+                console.error(`  - ${error.message}`);
+            });
+            console.log()
         }
     });
     process.exit(1);

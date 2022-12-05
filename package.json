@@ -4,6 +4,7 @@
   "description": "Discover modules created by the Nest.js team and community to supercharge your Nest.js projects.",
   "main": "index.js",
   "scripts": {
+    "categories": "./cmd/categories.mjs",
     "generate": "npm run generate:module",
     "generate:module": "./cmd/generate-module.mjs",
     "generate:category": "./cmd/generate-category.mjs",

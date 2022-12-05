@@ -6,8 +6,6 @@ website: https://docs.nestjs.com/techniques/http-module
 icon: nestjs.svg
 categories:
   - http
-keywords:
-  - http
 maintainers:
   - name: Kamil Myśliwiec
     github: kamilmysliwiec

@@ -3,6 +3,7 @@ $.verbose = false;
 
 import prompts from 'prompts';
 import { titleCase } from 'title-case';
+import { paramCase } from 'change-case';
 import { loadCategories } from './lib/modules.mjs';
 import { dump } from 'js-yaml';
 
@@ -39,5 +40,5 @@ const { value: confirmed } = await prompts({
 if(confirmed) {
     const filename = `modules/categories.yml`;
     fs.writeFileSync(filename, yaml);
-    console.log(chalk.green(`Categories updated: ${filename}`));
+    console.log(chalk.green(`Categories updated: ${filename}. You can now use \`${paramCase(name)}\` as a category.`));
 }
