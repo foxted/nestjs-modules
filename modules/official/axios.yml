@@ -1,0 +1,16 @@
+name: axios
+description: Axios is a promise-based HTTP client that works both in the browser and in a node.js environment.
+repository: nestjs/axios
+npm: '@nestjs/axios'
+website: https://docs.nestjs.com/techniques/http-module
+icon: nestjs.svg
+categories:
+  - http
+keywords:
+  - http
+maintainers:
+  - name: Kamil Myśliwiec
+    github: kamilmysliwiec
+usefulLinks:
+  - name: Official Documentation
+    url: https://docs.nestjs.com/techniques/http-module

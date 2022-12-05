@@ -1,0 +1,10 @@
+name: config
+description: ''
+repository: nestjs/config
+npm: '@nestjs/config'
+website: ''
+categories:
+  - analytics
+maintainers:
+  - name: Kamil Myśliwiec
+    github: kamilmysliwiec

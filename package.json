@@ -1,0 +1,33 @@
+{
+  "name": "nestjs-modules",
+  "version": "1.0.0",
+  "description": "Discover modules created by the Nest.js team and community to supercharge your Nest.js projects.",
+  "main": "index.js",
+  "scripts": {
+    "generate": "npm run generate:module",
+    "generate:module": "./cmd/generate-module.mjs",
+    "generate:category": "./cmd/generate-category.mjs",
+    "validate": "npm run validate:categories && npm run validate:modules",
+    "validate:categories": "./cmd/validate-categories.mjs",
+    "validate:modules": "./cmd/validate-modules.mjs",
+    "sync": "npm run sync:categories && npm run sync:modules",
+    "sync:categories": "./cmd/sync-categories.mjs",
+    "sync:icons": "./cmd/sync-icons.mjs",
+    "sync:modules": "./cmd/sync-modules.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "“Valentin <valentin@whatdafox.com> (https://twitter.com/valentinprngd)",
+  "license": "MIT",
+  "dependencies": {
+    "change-case": "^4.1.2",
+    "firebase-admin": "^11.3.0",
+    "joi": "^17.7.0",
+    "js-yaml": "^4.1.0",
+    "lodash-es": "^4.17.21",
+    "prompts": "^2.4.2",
+    "title-case": "^3.0.3",
+    "uuid": "^9.0.0",
+    "zx": "^7.1.1"
+  }
+}
