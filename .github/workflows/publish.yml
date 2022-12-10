@@ -40,8 +40,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Setup credentials
+        run: | 
+          echo "$GOOGLE_SERVICE_ACCOUNT" > credentials.json
+          echo "$(pwd)/credentials.json" >> $GITHUB_ENV
+        env:
+          GOOGLE_SERVICE_ACCOUNT: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
+
       - name: Publish
         run: npm run sync
         env:
-          GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
           GOOGLE_STORAGE_BUCKET: ${{ secrets.GOOGLE_STORAGE_BUCKET }}
