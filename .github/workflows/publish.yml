@@ -46,6 +46,6 @@ jobs:
         run: npm ci
 
       - name: Publish
-        run: env
+        run: npm run sync
         env:
           GOOGLE_STORAGE_BUCKET: ${{ secrets.GOOGLE_STORAGE_BUCKET }}
