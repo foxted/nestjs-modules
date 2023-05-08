@@ -9,8 +9,8 @@ export default Joi.object({
     type: Joi.string().required().only().allow('official', 'community', 'third-party'),
     name: Joi.string().required(),
     description: Joi.string().required().allow(''),
-    repository: Joi.string().regex(/^([A-Za-z0-9])+[/]{1}[A-Za-z]+$/).required(),
-    npm: Joi.string().regex(/^([@-_A-Za-z0-9])+[/]?[A-Za-z-_]+$/).required(),
+    repository: Joi.string().regex(/^([A-Za-z0-9])+[/]{1}[A-Za-z0-9-_]+$/).required(),
+    npm: Joi.string().regex(/^([@-_A-Za-z0-9])+[/]?[A-Za-z0-9-_]+$/).required(),
     website: Joi.string().uri().required().allow(''),
     icon: Joi.string().regex(/[\w-_]+.(svg|png)$/).optional().allow(null),
     categories: Joi.array().items(Joi.string().only().allow(
