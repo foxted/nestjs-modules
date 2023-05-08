@@ -1,0 +1,14 @@
+name: graphql
+description: GraphQL is a powerful query language for APIs and a runtime for fulfilling those queries with your existing data
+repository: nestjs/graphql
+npm: '@nestjs/graphql'
+website: https://docs.nestjs.com/graphql/quick-start
+icon: nestjs.svg
+categories:
+  - graphql
+maintainers:
+  - name: Kamil Myśliwiec
+    github: kamilmysliwiec
+usefulLinks:
+  - name: Official Documentation
+    url: https://docs.nestjs.com/graphql/quick-start

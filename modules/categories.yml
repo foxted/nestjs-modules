@@ -1,3 +1,14 @@
 categories:
+  - API
+  - Auth
+  - CLI
   - Config
+  - Database
+  - Documentation
+  - GraphQL
+  - Healthchecks
   - HTTP
+  - I18n
+  - Microservices
+  - Security
+  - Webhooks

@@ -1,0 +1,14 @@
+name: typeorm
+description: TypeORM module for Nest.
+repository: nestjs/typeorm
+npm: '@nestjs/typeorm'
+website: https://docs.nestjs.com/techniques/sql
+icon: nestjs.svg
+categories:
+  - database
+maintainers:
+  - name: Kamil Myśliwiec
+    github: kamilmysliwiec
+usefulLinks:
+  - name: Official Documentation
+    url: https://docs.nestjs.com/techniques/sql

@@ -1,0 +1,13 @@
+name: '@golevelup/nestjs-stripe'
+description: Interacting with the Stripe API or consuming Stripe webhooks in your NestJS applications
+repository: golevelup/nestjs
+npm: '@golevelup/nestjs-stripe'
+website: https://github.com/golevelup/nestjs/blob/master/packages/stripe/README.md
+categories:
+  - api
+maintainers:
+  - name: Jesse Carter
+    github: WonderPanda
+usefulLinks:
+  - name: Official Documentation
+    url: https://github.com/golevelup/nestjs/blob/master/packages/stripe/README.md

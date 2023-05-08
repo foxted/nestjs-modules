@@ -1,0 +1,13 @@
+name: '@golevelup/nestjs-rabbitmq'
+description: A NestJS native module for RabbitMQ that supports both RPC and Publish/Subscribe messaging patterns
+repository: golevelup/nestjs
+npm: '@golevelup/nestjs-rabbitmq'
+website: https://github.com/golevelup/nestjs/blob/master/packages/rabbitmq/README.md
+categories:
+  - microservices
+maintainers:
+  - name: Jesse Carter
+    github: WonderPanda
+usefulLinks:
+  - name: Official Documentation
+    url: https://github.com/golevelup/nestjs/blob/master/packages/rabbitmq/README.md

@@ -10,6 +10,8 @@ export const COLLECTION_CATEGORIES = 'categories';
 export const COLLECTION_ICONS = 'icons';
 export const COLLECTION_MODULES = 'modules';
 
+const iconCache = {};
+
 const app = initializeApp({
     credential: applicationDefault(),
 });
@@ -86,24 +88,35 @@ export const remove = async (collection, documents) => {
 }
 
 export const fetchIcon = async (name) => {
-    console.log(`Fetching icon ${name}...`);
     const filepath = `icons/${name}`;
     const bucket = storage.bucket(process.env.GOOGLE_STORAGE_BUCKET);
     const file = bucket.file(filepath);
 
+    if(typeof iconCache[name] !== 'undefined') {
+        console.log(`Fetching icon ${name} from cache...`);
+        return iconCache[name];
+    }
+
+    console.log(`Fetching icon ${name}...`);
+
     const [exists] = await file.exists();
 
     if (!exists) {
-        return {
-            url: null,
-        };
+        const data = { url: null };
+
+        iconCache[name] = data;
+
+        return data;
     }
 
     const [metadata] = await file.getMetadata();
-
-    return {
+    const data = {
         url: `https://firebasestorage.googleapis.com/v0/b/${process.env.GOOGLE_STORAGE_BUCKET}/o/${encodeURIComponent(path)}?alt=media&token=${metadata.metadata.firebaseStorageDownloadTokens}`,
     };
+
+    iconCache[name] = data;
+
+    return data;
 }
 
 export const clearIcons = async (icons) => {

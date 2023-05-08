@@ -1,0 +1,13 @@
+name: '@golevelup/nestjs-hasura'
+description: Super charged Hasura Event Handlers and other utilities for seamlessly integrating Hasura with NestJS
+repository: golevelup/nestjs
+npm: '@golevelup/nestjs-hasura'
+website: https://github.com/golevelup/nestjs/blob/master/packages/hasura/README.md
+categories:
+  - database
+maintainers:
+  - name: Jesse Carter
+    github: WonderPanda
+usefulLinks:
+  - name: Official Documentation
+    url: https://github.com/golevelup/nestjs/blob/master/packages/hasura/README.md

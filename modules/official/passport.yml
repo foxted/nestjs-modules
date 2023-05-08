@@ -1,0 +1,14 @@
+name: passport
+description: Passport utilities module for Nest.
+repository: nestjs/passport
+npm: '@nestjs/passport'
+website: https://docs.nestjs.com/techniques/authentication
+icon: nestjs.svg
+categories:
+  - auth
+maintainers:
+  - name: Kamil Myśliwiec
+    github: kamilmysliwiec
+usefulLinks:
+  - name: Official Documentation
+    url: https://docs.nestjs.com/techniques/authentication

@@ -1,0 +1,14 @@
+name: microservices
+description: In addition to traditional (sometimes called monolithic) application architectures, Nest natively supports the microservice architectural style of development
+repository: nestjs/microservices
+npm: '@nestjs/microservices'
+website: https://docs.nestjs.com/microservices/basics
+icon: nestjs.svg
+categories:
+  - microservices
+maintainers:
+  - name: Kamil Myśliwiec
+    github: kamilmysliwiec
+usefulLinks:
+  - name: Official Documentation
+    url: https://docs.nestjs.com/microservices/basics

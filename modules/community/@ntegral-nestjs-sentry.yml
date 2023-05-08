@@ -1,0 +1,13 @@
+name: '@ntegral/nestjs-sentry'
+description: Provides an injectable sentry.io client to provide enterprise logging nestjs modules
+repository: ntegral/nestjs-sentry
+npm: '@ntegral/nestjs-sentry'
+website: https://github.com/ntegral/nestjs-sentry/blob/master/README.MD
+categories:
+  - graphql
+maintainers:
+  - name: Dexter Hardy
+    github: ntegral
+usefulLinks:
+  - name: Official Documentation
+    url: https://github.com/ntegral/nestjs-sentry/blob/master/README.MD

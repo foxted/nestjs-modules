@@ -1,0 +1,14 @@
+name: cli
+description: The Nest CLI is a command-line interface tool that helps you to initialize, develop, and maintain your Nest applications. It assists in multiple ways, including scaffolding the project, serving it in development mode, and building and bundling the application for production distribution.
+repository: nestjs/cli
+npm: '@nestjs/cli'
+website: https://docs.nestjs.com/cli/overview
+icon: nestjs.svg
+categories:
+  - cli
+maintainers:
+  - name: Kamil Myśliwiec
+    github: kamilmysliwiec
+usefulLinks:
+  - name: Official Documentation
+    url: https://docs.nestjs.com/cli/overview

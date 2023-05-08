@@ -4,6 +4,11 @@ import { fetchDownloads, fetchPackage } from './npm.mjs';
 import { fetchRepository } from './github.mjs';
 import { paramCase } from 'change-case';
 import { fetchIcon } from './firebase.mjs';
+import { parse } from 'marked';
+
+const categoryOverrides = {
+    'GraphQL': 'graphql',
+}
 
 export const loadIcons = async () => {
     console.warn(chalk.green(`Loading icons...`));
@@ -21,10 +26,13 @@ export const loadCategories = async () => {
 
     const { categories } = load(fs.readFileSync(file, 'utf8'));
 
-    return categories.map(category => ({
-        id: paramCase(category),
-        name: category
-    }));
+    return categories.map(category => {
+        const id = typeof categoryOverrides[category] !== 'undefined' ? categoryOverrides[category] : paramCase(category);
+        return {
+            id,
+            name: category
+        };
+    });
 }
 
 export const loadModules = async (type, augment = true) => {
@@ -67,7 +75,7 @@ const augmentModules = async (modules) => {
         augmentedModules.push({
             ...module,
             id: paramCase(name),
-            readme: readme || '',
+            readme: readme ? parse(readme) : '',
             iconUrl: url,
             stars,
             downloads,

@@ -1,0 +1,13 @@
+name: '@golevelup/nestjs-graphql-request'
+description: Dependency Injection for GraphQLClient. Make type safe requests to third party GQL APIs
+repository: golevelup/nestjs
+npm: '@golevelup/nestjs-graphql-request'
+website: https://github.com/golevelup/nestjs/blob/master/packages/graphql-request/README.md
+categories:
+  - graphql
+maintainers:
+  - name: Jesse Carter
+    github: WonderPanda
+usefulLinks:
+  - name: Official Documentation
+    url: https://github.com/golevelup/nestjs/blob/master/packages/graphql-request/README.md

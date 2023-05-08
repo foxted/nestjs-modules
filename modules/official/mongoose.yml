@@ -1,0 +1,14 @@
+name: mongoose
+description: Mongoose module for Nest.
+repository: nestjs/mongoose
+npm: '@nestjs/mongoose'
+website: https://docs.nestjs.com/techniques/mongodb
+icon: nestjs.svg
+categories:
+  - database
+maintainers:
+  - name: Kamil Myśliwiec
+    github: kamilmysliwiec
+usefulLinks:
+  - name: Official Documentation
+    url: https://docs.nestjs.com/techniques/mongodb

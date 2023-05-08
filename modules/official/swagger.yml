@@ -1,0 +1,14 @@
+name: swagger
+description: OpenAPI (Swagger) module for Nest.
+repository: nestjs/swagger
+npm: '@nestjs/swagger'
+website: https://docs.nestjs.com/openapi/introduction
+icon: nestjs.svg
+categories:
+  - documentation
+maintainers:
+  - name: Kamil Myśliwiec
+    github: kamilmysliwiec
+usefulLinks:
+  - name: Official Documentation
+    url: https://docs.nestjs.com/openapi/introduction

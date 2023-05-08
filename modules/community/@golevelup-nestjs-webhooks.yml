@@ -1,0 +1,13 @@
+name: '@golevelup/nestjs-webhooks'
+description: Make it easier to build NestJS applications that consume webhooks from third party services
+repository: golevelup/nestjs
+npm: '@golevelup/nestjs-webhooks'
+website: https://github.com/golevelup/nestjs/blob/master/packages/webhooks/README.md
+categories:
+  - webhooks
+maintainers:
+  - name: Jesse Carter
+    github: WonderPanda
+usefulLinks:
+  - name: Official Documentation
+    url: https://github.com/golevelup/nestjs/blob/master/packages/webhooks/README.md

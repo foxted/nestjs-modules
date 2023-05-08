@@ -1,0 +1,15 @@
+name: throttler
+description: A rate limiting module for NestJS to work with Fastify, Express, GQL, Websockets, and RPC.
+repository: nestjs/throttler
+npm: '@nestjs/throttler'
+website: https://docs.nestjs.com/security/rate-limiting
+icon: nestjs.svg
+categories:
+  - http
+  - security
+maintainers:
+  - name: Kamil Myśliwiec
+    github: kamilmysliwiec
+usefulLinks:
+  - name: Official Documentation
+    url: https://docs.nestjs.com/security/rate-limiting

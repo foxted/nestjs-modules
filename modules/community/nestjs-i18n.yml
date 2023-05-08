@@ -1,0 +1,13 @@
+name: 'nestjs-i18n'
+description: Provides an injectable sentry.io client to provide enterprise logging nestjs modules
+repository: toonvanstrijp/nestjs-i18n
+npm: 'nestjs-i18n'
+website: https://nestjs-i18n.com/
+categories:
+  - i18n
+maintainers:
+  - name: Toon van Strijp
+    github: toonvanstrijp
+usefulLinks:
+  - name: Official Documentation
+    url: https://nestjs-i18n.com/

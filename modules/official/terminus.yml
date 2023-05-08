@@ -1,0 +1,14 @@
+name: terminus
+description: This module contains integrated healthchecks for Nest.
+repository: nestjs/terminus
+npm: '@nestjs/terminus'
+website: https://docs.nestjs.com/recipes/terminus
+icon: nestjs.svg
+categories:
+  - healthchecks
+maintainers:
+  - name: Kamil Myśliwiec
+    github: kamilmysliwiec
+usefulLinks:
+  - name: Official Documentation
+    url: https://docs.nestjs.com/recipes/terminus

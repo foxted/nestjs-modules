@@ -1,10 +1,14 @@
 name: config
-description: ''
+description: Configuration module for Nest based on the dotenv (to load process environment variables) package.
 repository: nestjs/config
 npm: '@nestjs/config'
-website: ''
+website: https://docs.nestjs.com/techniques/configuration
+icon: nestjs.svg
 categories:
   - config
 maintainers:
   - name: Kamil Myśliwiec
     github: kamilmysliwiec
+usefulLinks:
+  - name: Official Documentation
+    url: https://docs.nestjs.com/techniques/configuration
